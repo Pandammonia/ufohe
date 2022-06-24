@@ -1,1 +1,1 @@
-web: gunicorn cv.wsgi --log-file -
+web: gunicorn ufosite.wsgi --log-file -
