@@ -94,7 +94,7 @@ AUTH_PASSWORD_VALIDATORS = [
 SECRET_KEY = 'django-insecure-ty8$c8=rv6kipt$6(w((h(7&x$k!pycylkjw7zp3^e0=*uv00z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -102,18 +102,18 @@ ALLOWED_HOSTS = []
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'ufosite',
+        'USER': 'postgres',
+        'PASSWORD': 'Peacock',
         'HOST': '',
-        'PORT': '5342',
+        'PORT': '',
     }
 }
 
 SECRET_KEY = 'django-insecure-ty8$c8=rv6kipt$6(w((h(7&x$k!pycylkjw7zp3^e0=*uv00z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
