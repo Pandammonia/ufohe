@@ -11,4 +11,9 @@ urlpatterns = [
     path('sighting/', views.sighting, name='sighting'),
     path('fermi/', views.fermi, name='fermi'),
     path('theory/', views.theory, name='theory'),
+    path('user_theories/', views.usertheories, name='usertheories'),
+    path('user_theories/<int:th_id>/', views.theorydetail, name='thdetail'),
+    path('user_sightings/', views.usersightings, name='usersightings'),
+    path('user_sightings/<int:st_id>/', views.sightdetail, name="stdetail"),
+    path('thanks/', views.thankyou, name='thanks'),
 ]

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import SightingForm
 from .models import SightForm, TheoryForm
+from .models import Theory, Sighting
 
 def index(request):
 	return render(request, 'pages/index.html')
@@ -36,8 +37,31 @@ def theory(request):
 		form = TheoryForm(data=request.POST)
 		if form.is_valid():
 			form.save()
-			return redirect ('pages:index')
+			return redirect ('pages:thanks')
 	else:
 		form = TheoryForm()
 		context = {'form':form} 
 	return render(request, 'pages/theory.html', context)
+
+def usertheories(request):
+	theories = Theory.objects.filter(status='Visible')
+	context = {'theories':theories}
+	return render(request, 'pages/usertheories.html', context)
+
+def theorydetail(request, th_id):
+	theory = Theory.objects.get(id=th_id)
+	context = {'theory': theory}
+	return render(request, 'pages/theorydetail.html', context)
+
+def thankyou(request):
+	return render(request, 'pages/thankyou.html')
+
+def usersightings(request):
+	sightings = Sighting.objects.all()
+	context = {'sightings':sightings}
+	return render(request, 'pages/sightings.html', context)
+
+def sightdetail(request, st_id):
+	sighting = Sighting.objects.get(id=st_id)
+	context = {'sighting':sighting}
+	return render(request, 'pages/sightingdetail.html', context)
