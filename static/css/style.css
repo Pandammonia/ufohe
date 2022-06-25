@@ -1,0 +1,50 @@
+body{
+	background-color: #ffffff;}
+div.one{
+		color: #000000;
+	font-family:  Century Gothic;
+}
+h1.one{
+	color: #000000;
+	border-color: #fb5a00;
+	font-family: Century Gothic;}
+
+h2.one{
+	color: #000000;
+	border-color: #fb5a00;
+	font-family: Century Gothic;}
+
+.ros{
+  border: 5px dotted black;
+  border-radius: 10%;
+}
+.baselinks{
+	font-family: Century Gothic;
+	display: inline;
+	color: #000000;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;}
+ul{
+	color: #000000;
+	font-family:  Century Gothic;
+}
+
+p.one{
+	color: #000000;
+	font-family:  Century Gothic;
+}
+
+tr{
+		color: #000000;
+	font-family:  Century Gothic;
+}
+td{
+	color: #000000;
+	font-family:  Century Gothic;
+}
+
+form.one{
+	color: #000000;
+	font-family:  Century Gothic;
+}
